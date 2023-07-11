@@ -11,8 +11,9 @@ const Section = () => {
     <div>
       <div className="m-20 p-7">
         <textarea
-          rows="10"
-          cols="50"
+          rows={3}
+          className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-rose-600 sm:text-sm sm:leading-6"
+          defaultValue={""}
           value={inputText}
           onChange={(e) => setInputText(e.target.value)}
         ></textarea>
